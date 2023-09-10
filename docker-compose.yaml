@@ -1,0 +1,21 @@
+version: '3'
+name: 'RAAAHHHHH'
+
+services:
+  nginx:
+    container_name: 'nginx'
+    image: 'nginx:1.25.1'
+    ports:
+      - '80:80'
+    expose:
+      - 80
+    volumes:
+      - './nginx.conf:/etc/nginx/nginx.conf'
+    depends_on:
+      - bunserver
+  
+  bunserver:
+    container_name: 'buns'
+    build: './bun'
+    ports:
+      - '3000'
