@@ -1,14 +1,5 @@
 console.log(`Starting bun server!`);
 
-//*
-const router = new Bun.FileSystemRouter({
-  style: 'nextjs',
-  dir: './pages',
-  origin: 'localhost',
-  assetPrefix: ''
-});
-//*/
-
 function OnFetch(Request) {
   const url = new URL(Request.url);
 
