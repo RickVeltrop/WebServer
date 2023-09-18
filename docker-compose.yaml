@@ -1,5 +1,5 @@
 version: '3'
-name: 'webserver-bun'
+name: 'bunserver'
 
 services:
   nginx:
