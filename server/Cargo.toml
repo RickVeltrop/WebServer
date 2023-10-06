@@ -1,9 +1,0 @@
-[workspace]
-members = []
-
-[package]
-name = "hello_world" # the name of the package
-version = "0.0.0"    # the current version, obeying semver
-authors = ["Froggy <froggy@frogger.com>"]
-
-[dependencies]
